@@ -1,6 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 :root {
+  --display-font-size: 200px;
+  --display-line-height: 150px;
+  --heading-one-font-size: 56px;
+  --heading-one-line-height: 64px;
+  --heading-two-font-size: 24px;
+  --heading-two-line-height: 29px;
+  --heading-three-font-size: 18px;
+  --heading-three-line-height: 22px;
+  --sub-heading-one-font-size: 15px;
+  --sub-heading-one-line-height: 19px;
+  --sub-heading-two-font-size: 13px;
+  --sub-heading-two-line-height: 17px;
+  --link-one-font-size: 12px;
+  --link-one-line-height: 15px;
+  --link-one-space: 2.5px;
+  --link-two-font-size: 9px;
+  --link-two-line-height: 11px;
+  --link-two-space: 2px;
+  --body-font-size: 14px;
+  --body-line-height: 28px;
+  --color-black: #000000;
+  --color-dark-grey: #7d7d7d;
+  --color-grey: #e5e5e5;
+  --color-light-grey: #f3f3f3;
+  --color-white: #ffffff;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -135,4 +160,70 @@ table {
 
 body {
   font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+}
+
+.display {
+  font-size: var(--display-font-size);
+  line-height: var(--display-line-height);
+}
+
+.heading-one {
+  font-size: var(--heading-one-font-size);
+  line-height: var(--heading-one-line-height);
+}
+
+.heading-two {
+  font-size: var(--heading-two-font-size);
+  line-height: var(--heading-two-line-height);
+}
+
+.heading-three {
+  font-size: var(--heading-three-font-size);
+  line-height: var(--heading-three-line-height);
+}
+
+.subhead-one {
+  font-size: var(--sub-heading-one-font-size);
+  line-height: var(--sub-heading-one-line-height);
+  font-weight: 400;
+}
+
+.subhead-two {
+  font-size: var(--sub-heading-two-font-size);
+  line-height: var(--sub-heading-two-line-height);
+}
+
+.link-one {
+  font-size: var(--link-one-font-size);
+  line-height: var(--link-one-line-height);
+  letter-spacing: var(--link-one-space);
+}
+
+.link-two {
+  font-size: var(--link-two-font-size);
+  line-height: var(--link-two-line-height);
+  letter-spacing: var(--link-two-space);
+}
+
+.black {
+  color: var(--color-black);
+}
+
+.dark-grey {
+  color: var(--color-dark-grey);
+}
+
+.grey {
+  color: var(--color-grey);
+}
+
+.light-grey {
+  color: var(--color-light-grey);
+}
+
+.white {
+  color: var(--color-white);
 }
