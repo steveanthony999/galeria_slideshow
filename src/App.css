@@ -1,0 +1,6 @@
+hr {
+  height: 1px;
+  border: none;
+  margin-top: 40px;
+  background-color: var(--color-grey);
+}

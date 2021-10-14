@@ -163,6 +163,7 @@ body {
   font-weight: 700;
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);
+  padding: 40px;
 }
 
 .display {
