@@ -27,3 +27,7 @@ hr {
   align-items: center;
   justify-content: center; */
 }
+
+.my-masonry-grid div:nth-child(3) div:nth-child(3) img {
+  display: none;
+}

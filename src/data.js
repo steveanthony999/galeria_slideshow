@@ -207,6 +207,25 @@ const data = [
   },
   {
     id: 11,
+    name: null,
+    year: null,
+    description: null,
+    source: null,
+    artist: {
+      image: null,
+      name: null,
+    },
+    images: {
+      thumbnail: null,
+      hero: {
+        small: null,
+        large: null,
+      },
+      gallery: null,
+    },
+  },
+  {
+    id: 12,
     name: 'The Basket of Apples',
     year: 1893,
     description:
@@ -226,7 +245,7 @@ const data = [
     },
   },
   {
-    id: 12,
+    id: 13,
     name: 'The Boy in the Red Vest',
     year: 1889,
     description:
@@ -247,7 +266,7 @@ const data = [
     },
   },
   {
-    id: 13,
+    id: 14,
     name: 'Arnolfini Portrait',
     year: 1434,
     description:
@@ -267,7 +286,7 @@ const data = [
     },
   },
   {
-    id: 14,
+    id: 15,
     name: 'Mona Lisa',
     year: 1503,
     description:
@@ -287,7 +306,7 @@ const data = [
     },
   },
   {
-    id: 15,
+    id: 16,
     name: 'The Swing',
     year: 1767,
     description:
