@@ -18,6 +18,11 @@ const Gallery = () => {
             alt={i.name}
             style={{ width: '100%', height: '100%', objectFit: 'contain' }}
           />
+          <div className='bottom-fade'></div>
+          <div className='art-info'>
+            <h3 className='white heading-two'>{i.name}</h3>
+            <p className='white subhead-two'>{i.artist.name}</p>
+          </div>
         </div>
       ))}
     </Masonry>
