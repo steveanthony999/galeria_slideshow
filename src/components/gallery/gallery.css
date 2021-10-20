@@ -43,3 +43,15 @@
   position: absolute;
   bottom: 8px;
 }
+
+@media screen and (max-width: 768px) {
+  .my-masonry-grid .my-masonry-grid_column:first-child div:nth-child(6) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .my-masonry-grid .my-masonry-grid_column:first-child div:nth-child(11) {
+    display: none;
+  }
+}

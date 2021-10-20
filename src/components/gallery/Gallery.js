@@ -5,10 +5,16 @@ import './gallery.css';
 
 import data from '../../data';
 
+const breakpointColumnsObj = {
+  default: 4,
+  768: 2,
+  375: 1,
+};
+
 const Gallery = () => {
   return (
     <Masonry
-      breakpointCols={4}
+      breakpointCols={breakpointColumnsObj}
       className='my-masonry-grid'
       columnClassName='my-masonry-grid_column'>
       {data.map((i) => (
