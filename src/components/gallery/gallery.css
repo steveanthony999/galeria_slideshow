@@ -44,6 +44,11 @@
   bottom: 8px;
 }
 
+.my-masonry-grid_column > div:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
 @media screen and (min-width: 900px) and (max-width: 1100px) {
   .my-masonry-grid div:nth-child(3) div:nth-child(3) img {
     display: block;
