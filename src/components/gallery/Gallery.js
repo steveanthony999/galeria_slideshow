@@ -7,8 +7,9 @@ import data from '../../data';
 
 const breakpointColumnsObj = {
   default: 4,
-  768: 2,
-  375: 1,
+  1100: 3,
+  900: 2,
+  567: 1,
 };
 
 const Gallery = () => {
