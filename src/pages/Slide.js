@@ -1,10 +1,12 @@
 import React from 'react';
-import SlideshowBar from '../components/slideshowBar/SlideshowBar';
+import { useParams } from 'react-router';
 
 const Slide = () => {
+  const { id } = useParams();
+
   return (
     <div className='Slide'>
-      <SlideshowBar />
+      <h1>Slideshow {id}</h1>
     </div>
   );
 };

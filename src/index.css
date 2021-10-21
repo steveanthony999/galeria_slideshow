@@ -158,6 +158,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;

@@ -1,11 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './slideshowBar.css';
 
 const SlideshowBar = () => {
   return (
     <header className='SlideshowBar'>
-      <h1 className='heading-two'>galleria.</h1>
-      <p className='SlideshowBar-start link-one dark-grey'>START SLIDESHOW</p>
+      <Link className='heading-two black' to='/'>
+        galleria.
+      </Link>
+      <Link className='SlideshowBar-start link-one dark-grey' to='/1'>
+        START SLIDESHOW
+      </Link>
     </header>
   );
 };
