@@ -1,9 +1,10 @@
 import React from 'react';
+import SlideshowBar from '../components/slideshowBar/SlideshowBar';
 
 const Slide = () => {
   return (
     <div className='Slide'>
-      <h1>I'm a slide</h1>
+      <SlideshowBar />
     </div>
   );
 };
