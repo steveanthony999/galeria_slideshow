@@ -49,6 +49,11 @@
   opacity: 0.75;
 }
 
+.my-masonry-grid div:nth-child(3) div:nth-child(3) {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 @media screen and (min-width: 900px) and (max-width: 1100px) {
   .my-masonry-grid div:nth-child(3) div:nth-child(3) img {
     display: block;
