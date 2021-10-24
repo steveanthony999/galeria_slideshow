@@ -1,0 +1,15 @@
+.SlideInfo {
+  width: 36%;
+  position: absolute;
+  right: 0;
+}
+
+.SlideInfo .SlideInfo-container {
+  position: relative;
+}
+
+.SlideInfo .SlideInfo-container p {
+  padding-right: 125px;
+  position: absolute;
+  top: 7rem;
+}

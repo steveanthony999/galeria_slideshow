@@ -3,8 +3,10 @@ import './SlideInfo.css';
 const SlideInfo = ({ year, info }) => {
   return (
     <div className='SlideInfo'>
-      <h5>{year}</h5>
-      <p>{info}</p>
+      <div className='SlideInfo-container'>
+        <h5 className='display light-grey'>{year}</h5>
+        <p>{info}</p>
+      </div>
     </div>
   );
 };
