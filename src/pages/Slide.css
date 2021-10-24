@@ -1,5 +1,13 @@
-/* .Slide-img {
-  width: 475px;
-  height: 560px;
-  object-fit: cover;
-} */
+.Slide-container {
+  height: 624px;
+  padding-top: 100px;
+  position: relative;
+  display: flex;
+}
+
+.Slide .Slide-container .Slide-artist-image {
+  width: 128px;
+  height: 128px;
+  /* position: absolute;
+  bottom: 0; */
+}

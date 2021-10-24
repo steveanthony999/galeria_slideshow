@@ -7,22 +7,29 @@ import './Slide.css';
 
 import data from '../data';
 import SlideHeader from '../components/slideTitle/SlideHeader';
+import SlideInfo from '../components/slideInfo/SlideInfo';
 
 const Slide = () => {
   const { id } = useParams();
 
   return (
     <div className='Slide'>
-      <h1>Slideshow {id}</h1>
-      <p>{data[id - 1].year}</p>
-      <SlideImage
-        art={data[id - 1].images.gallery}
-        alt={`${data[id - 1].name} Art`}
-      />
-      <SlideHeader
-        title={data[id - 1].name}
-        artist={data[id - 1].artist.name}
-      />
+      <div className='Slide-container'>
+        <SlideImage
+          art={data[id - 1].images.gallery}
+          alt={`${data[id - 1].name} Art`}
+        />
+        <SlideHeader
+          title={data[id - 1].name}
+          artist={data[id - 1].artist.name}
+        />
+        <img
+          src={data[id - 1].artist.image}
+          alt={data[id - 1].artist.name}
+          className='Slide-artist-image'
+        />
+        <SlideInfo year={data[id - 1].year} info={data[id - 1].description} />
+      </div>
       <BottomBar />
     </div>
   );
