@@ -16,7 +16,7 @@ const data = [
         small: './assets/starry-night/hero-small.jpg',
         large: './assets/starry-night/hero-large.jpg',
       },
-      gallery: './assets/starry-night/gallery.jpg',
+      gallery: require('./assets/starry-night/gallery.jpg').default,
     },
   },
   {

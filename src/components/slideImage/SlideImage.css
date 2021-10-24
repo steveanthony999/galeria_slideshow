@@ -1,0 +1,9 @@
+.SlideImage {
+  display: inline-block;
+}
+
+.SlideImage img {
+  width: 475px;
+  height: 560px;
+  object-fit: cover;
+}
