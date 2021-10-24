@@ -6,9 +6,14 @@ import './BottomBar.css';
 const BottomBar = () => {
   return (
     <div className='BottomBar'>
-      <h1>Bottom Bar</h1>
-      <img src={BackButton} alt='back-button' />
-      <img src={NextButton} alt='next-button' />
+      <div className='BottomBar-info'>
+        <h3 className='heading-three'>Artwork Title</h3>
+        <p className='subhead-two fw-reg'>Artist Name</p>
+      </div>
+      <div className='BottomBar-nav'>
+        <img src={BackButton} alt='back-button' />
+        <img src={NextButton} alt='next-button' />
+      </div>
     </div>
   );
 };

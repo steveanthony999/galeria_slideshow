@@ -1,4 +1,23 @@
 .BottomBar {
+  width: 100vw;
+  height: 80px;
   position: absolute;
   bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-grey);
+}
+
+.BottomBar-info {
+  padding-left: 40px;
+}
+
+.BottomBar-nav {
+  padding-right: 40px;
+}
+
+.BottomBar-nav img:last-child {
+  padding-left: 40px;
 }
