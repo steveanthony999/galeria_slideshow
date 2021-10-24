@@ -1,6 +1,13 @@
 .SlideHeader {
-  width: 445px;
+  max-width: 445px;
   background: var(--color-white);
   padding-left: 65px;
   padding-bottom: 65px;
+  padding-right: 54px;
+  position: absolute;
+  left: -65px;
+}
+
+.SlideHeader .subhead-one {
+  margin-top: 1.5rem;
 }

@@ -19,15 +19,17 @@ const Slide = () => {
           art={data[id - 1].images.gallery}
           alt={`${data[id - 1].name} Art`}
         />
-        <SlideHeader
-          title={data[id - 1].name}
-          artist={data[id - 1].artist.name}
-        />
-        <img
-          src={data[id - 1].artist.image}
-          alt={data[id - 1].artist.name}
-          className='Slide-artist-image'
-        />
+        <div className='Slide-art-info'>
+          <SlideHeader
+            title={data[id - 1].name}
+            artist={data[id - 1].artist.name}
+          />
+          <img
+            src={data[id - 1].artist.image}
+            alt={data[id - 1].artist.name}
+            className='Slide-artist-image'
+          />
+        </div>
         <SlideInfo year={data[id - 1].year} info={data[id - 1].description} />
       </div>
       <BottomBar />
