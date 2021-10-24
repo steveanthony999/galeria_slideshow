@@ -213,6 +213,10 @@ body {
   letter-spacing: var(--link-two-space);
 }
 
+.fw-reg {
+  font-weight: 400;
+}
+
 .black {
   color: var(--color-black);
 }
