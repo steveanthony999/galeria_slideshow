@@ -18,6 +18,15 @@
   padding-right: 40px;
 }
 
+.BottomBar-nav img:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.BottomBar-nav .inactive {
+  opacity: 0.2;
+}
+
 .BottomBar-nav img:last-child {
   padding-left: 40px;
 }

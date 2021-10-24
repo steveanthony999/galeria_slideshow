@@ -4,6 +4,10 @@ import NextButton from '../../assets/shared/icon-next-button.svg';
 import './BottomBar.css';
 
 const BottomBar = () => {
+  const changeSlide = () => {
+    console.log('Window.location');
+  };
+
   return (
     <div className='BottomBar'>
       <div className='BottomBar-info'>
@@ -11,8 +15,13 @@ const BottomBar = () => {
         <p className='subhead-two fw-reg'>Artist Name</p>
       </div>
       <div className='BottomBar-nav'>
-        <img src={BackButton} alt='back-button' />
-        <img src={NextButton} alt='next-button' />
+        <img
+          src={BackButton}
+          alt='back-button'
+          className='inactive'
+          onClick={changeSlide}
+        />
+        <img src={NextButton} alt='next-button' onClick={changeSlide} />
       </div>
     </div>
   );
