@@ -27,6 +27,11 @@
   opacity: 0.2;
 }
 
+.BottomBar-nav .inactive:hover {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
 .BottomBar-nav img:last-child {
-  padding-left: 40px;
+  margin-left: 40px;
 }
