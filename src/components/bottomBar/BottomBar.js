@@ -17,13 +17,13 @@ const BottomBar = () => {
 
   useEffect(() => {
     if (parseInt(id) === 1) {
-      setBackNext({ ...backNext, back: false, next: true });
+      setBackNext((backNext) => ({ ...backNext, back: false, next: true }));
     } else if (parseInt(id) === 2) {
-      setBackNext({ ...backNext, back: true, next: true });
+      setBackNext((backNext) => ({ ...backNext, back: true, next: true }));
     } else if (parseInt(id) === 16) {
-      setBackNext({ ...backNext, back: true, next: false });
+      setBackNext((backNext) => ({ ...backNext, back: true, next: false }));
     } else {
-      setBackNext({ ...backNext, back: true, next: true });
+      setBackNext((backNext) => ({ ...backNext, back: true, next: true }));
     }
   }, [id]);
 

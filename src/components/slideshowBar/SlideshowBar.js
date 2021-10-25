@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './slideshowBar.css';
 
@@ -14,13 +14,11 @@ const SlideshowBar = () => {
       <Link className='heading-two black' to='/'>
         galleria.
       </Link>
-      {/* <Link className='SlideshowBar-start link-one dark-grey' to='/1'> */}
       <div
         className='SlideshowBar-toggle link-one dark-grey'
         onClick={toggleSlideshow}>
         {!slides ? 'START SLIDESHOW' : 'STOP SLIDESHOW'}
       </div>
-      {/* </Link> */}
     </header>
   );
 };
