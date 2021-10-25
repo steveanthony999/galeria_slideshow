@@ -1,11 +1,17 @@
+import { useLocation, useParams, useHistory } from 'react-router-dom';
+
 import BackButton from '../../assets/shared/icon-back-button.svg';
 import NextButton from '../../assets/shared/icon-next-button.svg';
 
 import './BottomBar.css';
 
 const BottomBar = () => {
+  const loc = useLocation();
+  const history = useHistory();
+  const { id } = useParams();
+
   const changeSlide = () => {
-    console.log('Window.location');
+    history.push(`/${parseInt(id) + 1}`);
   };
 
   return (
