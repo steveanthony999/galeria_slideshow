@@ -1,4 +1,5 @@
-import { useLocation, useParams, useHistory } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useParams, useHistory } from 'react-router-dom';
 
 import BackButton from '../../assets/shared/icon-back-button.svg';
 import NextButton from '../../assets/shared/icon-next-button.svg';
@@ -6,12 +7,42 @@ import NextButton from '../../assets/shared/icon-next-button.svg';
 import './BottomBar.css';
 
 const BottomBar = () => {
-  const loc = useLocation();
+  const [backNext, setBackNext] = useState({
+    back: false,
+    next: true,
+  });
+
   const history = useHistory();
   const { id } = useParams();
 
-  const changeSlide = () => {
-    history.push(`/${parseInt(id) + 1}`);
+  useEffect(() => {
+    if (parseInt(id) === 1) {
+      setBackNext({ ...backNext, back: false, next: true });
+    } else if (parseInt(id) === 2) {
+      setBackNext({ ...backNext, back: true, next: true });
+    } else if (parseInt(id) === 16) {
+      setBackNext({ ...backNext, back: true, next: false });
+    } else {
+      setBackNext({ ...backNext, back: true, next: true });
+    }
+  }, [id]);
+
+  const changeSlideBack = () => {
+    if (parseInt(id) === 12) {
+      history.push(`/${parseInt(id) - 2}`);
+    } else {
+      history.push(`/${parseInt(id) - 1}`);
+    }
+  };
+
+  const changeSlideNext = () => {
+    if (parseInt(id) === 10) {
+      history.push(`/${parseInt(id) + 2}`);
+    } else if (parseInt(id) === 16) {
+      history.push(`/1`);
+    } else {
+      history.push(`/${parseInt(id) + 1}`);
+    }
   };
 
   return (
@@ -24,10 +55,15 @@ const BottomBar = () => {
         <img
           src={BackButton}
           alt='back-button'
-          className='inactive'
-          onClick={changeSlide}
+          className={backNext.back === false ? 'inactive' : null}
+          onClick={changeSlideBack}
         />
-        <img src={NextButton} alt='next-button' onClick={changeSlide} />
+        <img
+          src={NextButton}
+          alt='next-button'
+          className={backNext.next === false ? 'inactive' : null}
+          onClick={changeSlideNext}
+        />
       </div>
     </div>
   );
