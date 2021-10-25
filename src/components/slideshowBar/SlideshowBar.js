@@ -2,8 +2,12 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './slideshowBar.css';
 
-const SlideshowBar = () => {
+const SlideshowBar = ({ saveSlideState }) => {
   const [slides, setSlides] = useState(false);
+
+  useEffect(() => {
+    saveSlideState(slides);
+  });
 
   const toggleSlideshow = () => {
     setSlides((slides) => !slides);

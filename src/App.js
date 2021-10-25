@@ -5,10 +5,14 @@ import SlideshowBar from './components/slideshowBar/SlideshowBar';
 import './App.css';
 
 function App() {
+  const saveSlideState = (e) => {
+    console.log(e);
+  };
+
   return (
     <Router>
       <div className='App'>
-        <SlideshowBar />
+        <SlideshowBar saveSlideState={saveSlideState} />
         <hr />
         <Switch>
           <Route exact path='/'>
