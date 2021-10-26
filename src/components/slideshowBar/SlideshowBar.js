@@ -1,13 +1,31 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import './slideshowBar.css';
 
-const SlideshowBar = ({ saveSlideState }) => {
+const SlideshowBar = () => {
   const [slides, setSlides] = useState(false);
+  const [count, setCount] = useState(1);
+
+  const history = useHistory();
 
   useEffect(() => {
-    saveSlideState(slides);
-  });
+    if (slides === true) {
+      history.push(`/${count}`);
+
+      const timer = window.setInterval(() => {
+        if (count === 10) {
+          setCount((prevCount) => prevCount + 2);
+        } else if (count === 16) {
+          setCount(1);
+        } else {
+          setCount((prevCount) => prevCount + 1);
+        }
+      }, 1000);
+      return () => {
+        window.clearInterval(timer);
+      };
+    }
+  }, [slides, count, history]);
 
   const toggleSlideshow = () => {
     setSlides((slides) => !slides);
