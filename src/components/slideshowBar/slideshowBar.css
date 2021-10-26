@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.SlideshowBar a:hover {
+  color: var(--color-dark-grey);
+}
+
 .SlideshowBar-start:hover {
   cursor: pointer;
   color: var(--color-black);
