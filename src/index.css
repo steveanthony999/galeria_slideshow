@@ -236,3 +236,10 @@ body {
 .white {
   color: var(--color-white);
 }
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
