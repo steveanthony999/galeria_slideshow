@@ -20,7 +20,7 @@ const SlideshowBar = () => {
         } else {
           setCount((prevCount) => prevCount + 1);
         }
-      }, 1000);
+      }, 5000);
       return () => {
         window.clearInterval(timer);
       };
