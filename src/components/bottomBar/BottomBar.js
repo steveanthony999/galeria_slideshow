@@ -7,7 +7,7 @@ import ProgressBar from '../progressBar/ProgressBar';
 
 import './BottomBar.css';
 
-const BottomBar = () => {
+const BottomBar = ({ title, artist }) => {
   const [backNext, setBackNext] = useState({
     back: false,
     next: true,
@@ -49,8 +49,8 @@ const BottomBar = () => {
   return (
     <div className='BottomBar'>
       <div className='BottomBar-info'>
-        <h3 className='heading-three'>Artwork Title</h3>
-        <p className='subhead-two fw-reg'>Artist Name</p>
+        <h3 className='heading-three'>{title}</h3>
+        <p className='subhead-two fw-reg'>{artist}</p>
       </div>
       <div className='BottomBar-nav'>
         <img

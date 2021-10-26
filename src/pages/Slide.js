@@ -32,7 +32,7 @@ const Slide = () => {
         </div>
         <SlideInfo year={data[id - 1].year} info={data[id - 1].description} />
       </div>
-      <BottomBar />
+      <BottomBar title={data[id - 1].name} artist={data[id - 1].artist.name} />
     </div>
   );
 };
