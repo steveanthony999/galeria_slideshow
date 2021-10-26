@@ -3,6 +3,7 @@ import { useParams, useHistory } from 'react-router-dom';
 
 import BackButton from '../../assets/shared/icon-back-button.svg';
 import NextButton from '../../assets/shared/icon-next-button.svg';
+import ProgressBar from '../progressBar/ProgressBar';
 
 import './BottomBar.css';
 
@@ -65,6 +66,7 @@ const BottomBar = () => {
           onClick={changeSlideNext}
         />
       </div>
+      <ProgressBar id={id} />
     </div>
   );
 };
