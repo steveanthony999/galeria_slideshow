@@ -35,3 +35,9 @@
 .BottomBar-nav img:last-child {
   margin-left: 40px;
 }
+
+@media screen and (max-width: 1024px) {
+  .BottomBar {
+    position: fixed;
+  }
+}
