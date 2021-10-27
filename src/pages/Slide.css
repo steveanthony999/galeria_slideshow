@@ -39,7 +39,7 @@
   }
 
   .Slide .Slide-container .Slide-artist-image {
-    /* top: 14.8rem; */
+    left: -2rem;
     position: relative;
     align-self: flex-end;
   }
