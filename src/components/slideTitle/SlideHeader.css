@@ -11,3 +11,10 @@
 .SlideHeader .subhead-one {
   margin-top: 1.5rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .SlideHeader {
+    left: 0;
+    position: relative;
+  }
+}

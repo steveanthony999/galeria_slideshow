@@ -22,12 +22,25 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .Slide {
+  /* .Slide {
     height: 100%;
     overflow-y: scroll;
-  }
+  } */
 
   .Slide .Slide-container {
     padding-top: 40px;
+  }
+
+  .Slide .Slide-container .Slide-art-info {
+    height: 30%;
+    width: 420px;
+    position: absolute;
+    left: 240px;
+  }
+
+  .Slide .Slide-container .Slide-artist-image {
+    /* top: 14.8rem; */
+    position: relative;
+    align-self: flex-end;
   }
 }
