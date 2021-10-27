@@ -57,13 +57,13 @@ const BottomBar = ({ title, artist }) => {
           src={BackButton}
           alt='back-button'
           className={backNext.back === false ? 'inactive' : null}
-          onClick={changeSlideBack}
+          onClick={backNext.back && changeSlideBack}
         />
         <img
           src={NextButton}
           alt='next-button'
           className={backNext.next === false ? 'inactive' : null}
-          onClick={changeSlideNext}
+          onClick={backNext.next && changeSlideNext}
         />
       </div>
       <ProgressBar id={id} />

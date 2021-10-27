@@ -40,4 +40,14 @@
   .BottomBar {
     position: fixed;
   }
+
+  .BottomBar-nav .inactive,
+  .BottomBar-nav .inactive:hover {
+    touch-action: none;
+  }
+
+  .BottomBar-nav img:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
 }
