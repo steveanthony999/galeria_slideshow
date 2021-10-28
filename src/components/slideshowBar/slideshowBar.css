@@ -42,5 +42,6 @@
 
   .SlideshowBar div {
     margin-right: 24px;
+    font-size: 9px;
   }
 }

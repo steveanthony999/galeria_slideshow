@@ -56,4 +56,25 @@
   .BottomBar {
     background: var(--color-white);
   }
+
+  .BottomBar .BottomBar-info {
+    padding-left: 24px;
+  }
+
+  .BottomBar .BottomBar-info h3 {
+    font-size: 14px;
+  }
+
+  .BottomBar .BottomBar-info p {
+    font-size: 10px;
+  }
+
+  .BottomBar-nav {
+    padding-right: 24px;
+  }
+
+  .BottomBar-nav img {
+    width: 16.78px;
+    height: 16px;
+  }
 }
