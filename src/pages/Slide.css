@@ -21,7 +21,7 @@
   left: 30px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 375px) and (max-width: 1024px) {
   .Slide .Slide-container {
     padding-top: 40px;
   }
@@ -48,5 +48,13 @@
   .Slide .Slide-container .Slide-art-info {
     width: 100%;
     left: 0;
+    bottom: 12rem;
+  }
+
+  .Slide .Slide-container .Slide-artist-image {
+    width: 64px;
+    height: 64px;
+    left: 24px;
+    align-self: flex-start;
   }
 }

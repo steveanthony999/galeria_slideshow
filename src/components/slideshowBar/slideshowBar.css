@@ -29,8 +29,18 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 375px) and (max-width: 1024px) {
   .SlideshowBar {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .SlideshowBar a {
+    margin-left: 24px;
+  }
+
+  .SlideshowBar div {
+    margin-right: 24px;
   }
 }

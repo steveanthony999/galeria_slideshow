@@ -13,7 +13,7 @@
   top: 7rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 375px) and (max-width: 1024px) {
   .SlideInfo {
     width: 100%;
     top: 650px;
