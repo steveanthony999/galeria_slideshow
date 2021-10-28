@@ -22,11 +22,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  /* .Slide {
-    height: 100%;
-    overflow-y: scroll;
-  } */
-
   .Slide .Slide-container {
     padding-top: 40px;
   }
@@ -42,5 +37,16 @@
     left: -2rem;
     position: relative;
     align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Slide {
+    width: 100%;
+  }
+
+  .Slide .Slide-container .Slide-art-info {
+    width: 100%;
+    left: 0;
   }
 }

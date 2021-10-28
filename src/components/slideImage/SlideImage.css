@@ -7,3 +7,9 @@
   height: 560px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 375px) {
+  .SlideImage img {
+    width: 100%;
+  }
+}

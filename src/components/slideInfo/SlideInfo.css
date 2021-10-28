@@ -23,3 +23,14 @@
     padding-left: 7.5rem;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .SlideInfo .SlideInfo-container h5 {
+    font-size: 100px;
+  }
+
+  .SlideInfo .SlideInfo-container p {
+    width: 100%;
+    padding: 0;
+  }
+}

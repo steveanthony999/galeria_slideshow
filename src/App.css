@@ -16,3 +16,9 @@ hr {
     top: 70px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .App {
+    width: 100vw;
+  }
+}
