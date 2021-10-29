@@ -30,7 +30,11 @@ const Slide = () => {
             className='Slide-artist-image'
           />
         </div>
-        <SlideInfo year={data[id - 1].year} info={data[id - 1].description} />
+        <SlideInfo
+          year={data[id - 1].year}
+          info={data[id - 1].description}
+          source={data[id - 1].source}
+        />
       </div>
       <BottomBar title={data[id - 1].name} artist={data[id - 1].artist.name} />
     </div>

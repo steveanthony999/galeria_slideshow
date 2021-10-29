@@ -13,6 +13,12 @@
   top: 7rem;
 }
 
+.SlideInfo .SlideInfo-container a {
+  text-decoration: underline;
+  position: absolute;
+  top: 35rem;
+}
+
 @media screen and (min-width: 375px) and (max-width: 1024px) {
   .SlideInfo {
     width: 100%;
