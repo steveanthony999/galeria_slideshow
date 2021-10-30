@@ -35,4 +35,9 @@
     max-width: 100%;
     height: 280px;
   }
+
+  .SlideImage .SlideImage-view-link {
+    bottom: 35rem;
+    left: 1rem;
+  }
 }
