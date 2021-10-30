@@ -1,11 +1,33 @@
 .SlideImage {
   display: inline-block;
+  position: relative;
 }
 
 .SlideImage img {
   width: 475px;
   height: 560px;
   object-fit: cover;
+}
+
+.SlideImage .SlideImage-view-link {
+  background: black;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 5rem;
+  left: 1rem;
+}
+
+.SlideImage .SlideImage-view-link img {
+  width: 12px;
+  height: 12px;
+  margin-right: 1rem;
+}
+
+.SlideImage .SlideImage-view-link:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
 }
 
 @media screen and (max-width: 375px) {
