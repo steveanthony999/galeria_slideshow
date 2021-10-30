@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router';
+import { Context } from '../Store';
 import BottomBar from '../components/bottomBar/BottomBar';
 import SlideImage from '../components/slideImage/SlideImage';
+import SlideHeader from '../components/slideTitle/SlideHeader';
+import SlideInfo from '../components/slideInfo/SlideInfo';
+import GalleryModal from '../components/galleryModal/GalleryModal';
 
 import './Slide.css';
 
 import data from '../data';
-import SlideHeader from '../components/slideTitle/SlideHeader';
-import SlideInfo from '../components/slideInfo/SlideInfo';
 
 const Slide = () => {
+  const state = useContext(Context);
   const { id } = useParams();
 
   return (
@@ -37,6 +40,7 @@ const Slide = () => {
         />
       </div>
       <BottomBar title={data[id - 1].name} artist={data[id - 1].artist.name} />
+      {state[0] === true ? <GalleryModal /> : null}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import { createContext, useState } from 'react';
 
 const initialState = {
-  locationId: 1,
+  isModal: false,
 };
 
 export const Context = createContext();
