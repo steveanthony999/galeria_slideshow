@@ -40,7 +40,9 @@ const Slide = () => {
         />
       </div>
       <BottomBar title={data[id - 1].name} artist={data[id - 1].artist.name} />
-      {state[0] === true ? <GalleryModal /> : null}
+      {state[0] === true ? (
+        <GalleryModal art={data[id - 1].images.gallery} />
+      ) : null}
     </div>
   );
 };

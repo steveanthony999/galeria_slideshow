@@ -1,10 +1,14 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import ViewIcon from '../../assets/shared/icon-view-image.svg';
 import { Context } from '../../Store';
 import './SlideImage.css';
 
 const SlideImage = ({ art, alt }) => {
   const [state, setState] = useContext(Context);
+
+  useEffect(() => {
+    console.log(state);
+  }, [state]);
 
   return (
     <div className='SlideImage'>
