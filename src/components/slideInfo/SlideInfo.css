@@ -32,6 +32,11 @@
   .SlideInfo .SlideInfo-container p {
     padding-left: 7.5rem;
   }
+
+  .SlideInfo .SlideInfo-container a {
+    top: 25rem;
+    left: 7.5rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -50,5 +55,10 @@
     padding: 0;
     padding-left: 24px;
     top: 6rem;
+  }
+
+  .SlideInfo .SlideInfo-container a {
+    top: 34rem;
+    left: 24px;
   }
 }
