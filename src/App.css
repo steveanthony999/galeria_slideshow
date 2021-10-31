@@ -18,7 +18,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) and (max-height: 811px) {
+@media screen and (min-width: 375px) and (max-width: 768px) and (max-height: 1024px) {
   .App {
     height: 130vh;
   }
