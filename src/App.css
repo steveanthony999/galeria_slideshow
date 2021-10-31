@@ -18,6 +18,12 @@ hr {
   }
 }
 
+@media screen and (min-width: 375px) and (max-width: 768px) and (max-height: 811px) {
+  .App {
+    height: 130vh;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .App {
     width: 100vw;
