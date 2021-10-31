@@ -1,7 +1,9 @@
 .BottomBar {
   width: 100vw;
   height: 80px;
-  position: absolute;
+  background: var(--color-white);
+  /* position: absolute; */
+  position: fixed;
   bottom: 0;
   left: 0;
   display: flex;
@@ -53,9 +55,9 @@
 }
 
 @media screen and (max-width: 375px) {
-  .BottomBar {
+  /* .BottomBar {
     background: var(--color-white);
-  }
+  } */
 
   .BottomBar .BottomBar-info {
     padding-left: 24px;
