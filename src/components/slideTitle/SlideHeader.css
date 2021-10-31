@@ -12,7 +12,8 @@
   margin-top: 1.5rem;
 }
 
-@media screen and (min-width: 375px) and (max-width: 1024px) {
+/* @media screen and (min-width: 375px) and (max-width: 1024px) { */
+@media screen and (min-width: 375px) and (max-width: 1280px) {
   .SlideHeader {
     left: 0;
     position: relative;

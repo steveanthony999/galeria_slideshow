@@ -2,7 +2,6 @@
   width: 100vw;
   height: 80px;
   background: var(--color-white);
-  /* position: absolute; */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -38,7 +37,8 @@
   margin-left: 40px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 1024px) {
+/* @media screen and (min-width: 375px) and (max-width: 1024px) { */
+@media screen and (min-width: 375px) and (max-width: 1280px) {
   .BottomBar {
     position: fixed;
   }
@@ -55,10 +55,6 @@
 }
 
 @media screen and (max-width: 375px) {
-  /* .BottomBar {
-    background: var(--color-white);
-  } */
-
   .BottomBar .BottomBar-info {
     padding-left: 24px;
   }
